@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEADLOCK SCANNER</title>
+    <title>DEADLOCK</title>
     <style>
-        body { background: #000; color: #0f0; font-family: monospace; text-align: center; padding: 20px; }
-        .box { border: 4px solid #0f0; border-radius: 30px; padding: 30px; margin-top: 50px; box-shadow: 0 0 20px #0f0; }
-        button { width: 100%; padding: 25px; background: #0f0; color: #000; font-weight: bold; font-size: 24px; border: none; border-radius: 20px; margin-top: 20px; text-transform: uppercase; }
-        .ip-box { background: #111; padding: 20px; border-radius: 15px; margin: 25px 0; font-size: 30px; border: 1px solid #333; }
+        body { background: #000; color: #0f0; font-family: monospace; text-align: center; margin: 0; display: flex; align-items: center; justify-content: center; height: 100vh; }
+        .box { border: 4px solid #0f0; border-radius: 30px; padding: 40px; box-shadow: 0 0 20px #0f0; background: #050505; width: 80%; }
+        h1 { font-style: italic; font-size: 28px; margin-bottom: 20px; }
+        .ip { background: #111; padding: 20px; border-radius: 15px; margin: 20px 0; font-size: 24px; color: white; border: 1px solid #333; }
+        button { width: 100%; padding: 20px; background: #0f0; color: #000; font-weight: 900; font-size: 20px; border: none; border-radius: 15px; text-transform: uppercase; }
     </style>
 </head>
 <body>
     <div class="box">
-        <h1 style="font-style: italic; font-size: 35px;">DEADLOCK V1.0</h1>
-        <div class="ip-box">
-            <p style="font-size: 12px; color: #666; letter-spacing: 3px;">ROUTER IP FOUND:</p>
-            <p id="ip">---.---.---.---</p>
-        </div>
-        <button onclick="document.getElementById('ip').innerText='192.168.1.1'">СКАНИРОВАТЬ</button>
-        <p style="font-size: 10px; margin-top: 25px; color: #444;">OFFLINE MODE ACTIVE</p>
+        <h1>DEADLOCK V1.0</h1>
+        <div class="ip" id="ip">---.---.---.---</div>
+        <button onclick="document.getElementById('ip').innerText='192.168.1.1'">СКАНУВАТИ</button>
+        <p style="font-size: 10px; color: #444; margin-top: 20px;">OFFLINE VERSION</p>
     </div>
 </body>
 </html>
